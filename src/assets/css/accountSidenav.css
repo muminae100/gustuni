@@ -1,0 +1,46 @@
+.account__sidebar {
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+    background-color: #f1f1f1;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .account__sidebar a {
+    display: block;
+    color: rgb(59,119,153);
+    padding: 10px;
+    text-decoration: none;
+  }
+   
+  .account__sidebar a.active {
+    border-right: 1px solid rgb(59,119,153);
+    color: rgb(59,119,153);
+  }
+  
+  .account__sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.account__content {
+    padding: 1px 16px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .account__container{
+        flex-wrap: wrap;
+    }
+  }
+
+  .member__adminContent {
+    position: absolute;
+    right: 15%;
+    bottom: 2rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+  }

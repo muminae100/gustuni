@@ -1,0 +1,462 @@
+{
+ "songs" : [
+    {
+        "id": 1,
+        "imageUrl": "https://cdn.airbit.com/artwork/bbb84732f9dc968fb13459bbddb75096@300x.jpg",
+        "songName": "Aketch",
+        "artistName": "Olundo Gerry",
+        "playedCount": "23k",
+        "downloadedCount": "7k",
+        "genre_id": 1,
+        "songUrl": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
+    },
+    {
+        "id": 2,
+        "imageUrl": "https://cdn.airbit.com/artwork/161b8880a69622b908b070e81a5e2a25@300x.jpg",
+        "songName": "Walk",
+        "artistName": "John Walker",
+        "playedCount": "23k",
+        "downloadedCount": "7k",
+        "genre_id": 2,
+        "songUrl": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
+    },
+    {
+        "id": 3,
+        "imageUrl": "https://cdn.airbit.com/avatars/7e912fa3d8230e21f45b4d99f84a12b1@300x.jpg",
+        "songName": "Feel me",
+        "artistName": "Jane Doe",
+        "playedCount": "23k",
+        "downloadedCount": "7k",
+        "genre_id": 1,
+        "songUrl": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
+    },
+    {
+        "id": 4,
+        "imageUrl": "https://cdn.airbit.com/avatars/b2b64114bbf31e1930386d25a6604b62@300x.jpg",
+        "songName": "Far away",
+        "artistName": "Alan Walker",
+        "playedCount": "23k",
+        "downloadedCount": "7k",
+        "genre_id": 1,
+        "songUrl": "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3"
+        
+    }
+],
+    "genres": [
+        {
+            "id": 1,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/99.jpg",
+            "genreName": "Instrumentals",
+            "genreNameSub": "2,320,694 tracks",
+            "subGenres": [
+                {
+                    "id": 1,
+                    "subGenreName": "Hip Hop"
+                },
+                {
+                    "id": 2,
+                    "subGenreName": "Trap"
+                },
+                {
+                    "id": 3,
+                    "subGenreName": "Afro Pop"
+                },
+                {
+                    "id": 4,
+                    "subGenreName": "Religios"
+                },
+                {
+                    "id": 5,
+                    "subGenreName": "Odi Pop"
+                },
+                {
+                    "id": 6,
+                    "subGenreName": "House and Dance"
+                },
+                {
+                    "id": 7,
+                    "subGenreName": "Urban"
+                },
+                {
+                    "id": 1,
+                    "subGenreName": "Folk"
+                }
+            ] 
+        },
+        {   "id": 2,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/1.jpg",
+            "genreName": "Hip Hop",
+            "genreNameSub": "1,790,700 tracks",
+            "subGenres": [
+                {
+                    "id": 1,
+                    "subGenreName": "Boomba"
+                },
+                {
+                    "id": 2,
+                    "subGenreName": "Genge"
+                },
+                {
+                    "id": 3,
+                    "subGenreName": "Gengetone"
+                },
+                {
+                    "id": 4,
+                    "subGenreName": "Shrap"
+                },
+                {
+                    "id": 5,
+                    "subGenreName": "Kenyan drill"
+                }
+            ]
+        },
+        {   "id": 3,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/61.jpg",
+            "genreName": "Electronic",
+            "genreNameSub": "341,712 tracks",
+            "subGenres": []
+        },
+        {   "id": 4,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/79.jpg",
+            "genreName": "Rock",
+            "genreNameSub": "270,866 tracks",
+            "subGenres": []
+        },
+        {   "id": 5,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/54.jpg",
+            "genreName": "Alternative",
+            "genreNameSub": "196,602 tracks",
+            "subGenres": []
+        },
+        {   "id": 6,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/44.jpg",
+            "genreName": "Acoustic",
+            "genreNameSub": "155,282 tracks",
+            "subGenres": []
+        },
+        {   "id": 7,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/68.jpg",
+            "genreName": "Pop",
+            "genreNameSub": "134,892 tracks",
+            "subGenres": []
+        },
+        {   "id": 8,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/94.jpg",
+            "genreName": "Urban",
+            "genreNameSub": "110,110 tracks",
+            "subGenres": [
+                {
+                    "id": 1,
+                    "subGenreName": "Kapuka rap"
+                },
+                {
+                    "id": 2,
+                    "subGenreName": "Bongo flava"
+                },
+                {
+                    "id": 3,
+                    "subGenreName": "Urban pop"
+                },
+                {
+                    "id": 4,
+                    "subGenreName": "Urban trap"
+                }
+            ]
+        },
+        {   "id": 9,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/12.jpg",
+            "genreName": "Country",
+            "genreNameSub": "71,495 tracks",
+            "subGenres": []
+        },
+        {   "id": 10,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/14.jpg",
+            "genreName": "Metal",
+            "genreNameSub": "107,743 tracks",
+            "subGenres": []
+        },
+        {   "id": 11,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/81.jpg",
+            "genreName": "Jazz",
+            "genreNameSub": "46,961 tracks",
+            "subGenres": []
+        },
+        {   "id": 12,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/45.jpg",
+            "genreName": "World",
+            "genreNameSub": "79,821 tracks",
+            "subGenres": []
+        },
+        {   "id": 13,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/36.jpg",
+            "genreName": "Classical",
+            "genreNameSub": "2,320,694 tracks",
+            "subGenres": []
+        },
+        {   "id": 14,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/64.jpg",
+            "genreName": "Podcasts",
+            "genreNameSub": "45,663 tracks",
+            "subGenres": [
+                {
+                    "id": 1,
+                    "subGenreName": "Sports"
+                },
+                {
+                    "id": 2,
+                    "subGenreName": "Politics"
+                },
+                {
+                    "id": 3,
+                    "subGenreName": "True crime"
+                },
+                {
+                    "id": 4,
+                    "subGenreName": "News"
+                },
+                {
+                    "id": 5,
+                    "subGenreName": "Drama"
+                },
+                {
+                    "id": 6,
+                    "subGenreName": "Science"
+                },
+                {
+                    "id": 7,
+                    "subGenreName": "Business"
+                },
+                {
+                    "id": 8,
+                    "subGenreName": "Pop culture"
+                },
+                {
+                    "id": 9,
+                    "subGenreName": "Religious"
+                },
+                {
+                    "id": 10,
+                    "subGenreName": "Health"
+                },
+                {
+                    "id": 11,
+                    "subGenreName": "Journalism"
+                },
+                {
+                    "id": 12,
+                    "subGenreName": "Interview"
+                },
+                {
+                    "id": 13,
+                    "subGenreName": "Video game"
+                },
+                {
+                    "id": 14,
+                    "subGenreName": "Game"
+                }
+            ]
+        },
+        {   "id": 15,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/84.jpg",
+            "genreName": "Latin",
+            "genreNameSub": "28,160 tracks",
+            "subGenres": []
+        },
+        {   "id": 16,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/20.jpg",
+            "genreName": "Blues",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": []
+        },
+        {   "id": 17,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/99.jpg",
+            "genreName": "Trap",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": []
+        },
+        {   "id": 18,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/1.jpg",
+            "genreName": "Bongo",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": []
+        },
+        {   "id": 19,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/61.jpg",
+            "genreName": "Drill",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": []
+        },
+        {   "id": 20,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/79.jpg",
+            "genreName": "Dance",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": [
+                {
+                    "id": 1,
+                    "subGenreName": "Ndombolo"
+                },
+                {
+                    "id": 2,
+                    "subGenreName": "Amapiano"
+                }
+            ]
+        },
+        {   "id": 21,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/54.jpg",
+            "genreName": "Genge",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": []
+        },
+        {   "id": 22,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/44.jpg",
+            "genreName": "Amapiano",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": []
+        },
+        {   "id": 23,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/68.jpg",
+            "genreName": "Ethical",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": []
+        },
+        {   "id": 24,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/94.jpg",
+            "genreName": "Band",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": []
+        },
+        {   "id": 25,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/12.jpg",
+            "genreName": "Religious",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": [
+                {
+                    "id": 1,
+                    "subGenreName": "Christian"
+                },
+                {
+                    "id": 2,
+                    "subGenreName": "Islam"
+                },
+                {
+                    "id": 3,
+                    "subGenreName": "Hindu"
+                },
+                {
+                    "id": 4,
+                    "subGenreName": "Rastafarian"
+                },
+                {
+                    "id": 5,
+                    "subGenreName": "Neopagan"
+                }
+            ]
+        },
+        {   "id": 26,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/14.jpg",
+            "genreName": "Rap",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": []
+        },
+        {   "id": 27,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/81.jpg",
+            "genreName": "Spoken art",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": []
+        },
+        {   "id": 28,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/45.jpg",
+            "genreName": "Folk",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": [
+                {
+                    "id": 1,
+                    "subGenreName": "Agikuyu"
+                },
+                {
+                    "id": 2,
+                    "subGenreName": "Akamba"
+                },
+                {
+                    "id": 3,
+                    "subGenreName": "Abagusii"
+                },
+                {
+                    "id": 4,
+                    "subGenreName": "Giriama"
+                },
+                {
+                    "id": 5,
+                    "subGenreName": "Abaluhya"
+                },
+                {
+                    "id": 6,
+                    "subGenreName": "Luo"
+                },
+                {
+                    "id": 7,
+                    "subGenreName": "Kalenjin"
+                },
+                {
+                    "id": 1,
+                    "subGenreName": "Ameru"
+                }
+            ] 
+        },
+        {   "id": 29,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/36.jpg",
+            "genreName": "Mixes",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": []
+        },
+        {   "id": 30,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/64.jpg",
+            "genreName": "R&B",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": []
+        },
+        {   "id": 31,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/84.jpg",
+            "genreName": "Afro pop",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": [
+                {
+                    "id": 1,
+                    "subGenreName": "Kenya pop"
+                },
+                {
+                    "id": 2,
+                    "subGenreName": "Benga"
+                },
+                {
+                    "id": 3,
+                    "subGenreName": "Afro beat"
+                },
+                {
+                    "id": 4,
+                    "subGenreName": "Afro soul"
+                }
+            ]
+        },
+        {   "id": 32,
+            "imageUrl": "https://sclkssl.ssl.hwcdn.net/stock/cuts_small/20.jpg",
+            "genreName": "Odi pop",
+            "genreNameSub": "58,477 tracks",
+            "subGenres": [
+                {
+                    "id": 1,
+                    "subGenreName": "Gengetone"
+                },
+                {
+                    "id": 2,
+                    "subGenreName": "Dabonge"
+                },
+                {
+                    "id": 3,
+                    "subGenreName": "Debe"
+                }
+            ]
+        }
+    ]
+
+} 
