@@ -55,6 +55,8 @@ import BlogPage from "./BlogPage";
 import BlogItem from "./BlogItem";
 import MyPlaylist from './MyPlaylist';
 import NewUpload from './NewUpload';
+import TracksEdit from './TracksEdit';
+import SongsEdit from './SongsEdit';
 
 export {
     HomePage,
@@ -113,5 +115,7 @@ export {
     BlogPage,
     BlogItem,
     MyPlaylist,
-    NewUpload
+    NewUpload,
+    TracksEdit,
+    SongsEdit
 };

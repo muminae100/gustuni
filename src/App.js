@@ -57,7 +57,9 @@ import {
   BlogItem,
   BlogPage,
   MyPlaylist,
-  NewUpload
+  NewUpload,
+  TracksEdit,
+  SongsEdit
 } from "./pages";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { auth } from "./Firebase";
@@ -154,6 +156,8 @@ const App = () => {
         <Route exact path="/blog/:title" element={<BlogItem />} />
         <Route exact path="/myplaylist" element={<MyPlaylist />} />
         <Route exact path="/newupload" element={<NewUpload />} />
+        <Route exact path="/tracks/edit/:id" element={<TracksEdit />} />
+        <Route exact path="/songs/edit/:id" element={<SongsEdit />} />
       </Routes>
     </Router>
   );

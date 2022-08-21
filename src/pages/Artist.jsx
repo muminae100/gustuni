@@ -27,6 +27,7 @@ import Chip from '@mui/material/Chip';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import EventIcon from '@mui/icons-material/Event';
+import Popover from '@mui/material/Popover';
 
 
 const style = {
@@ -35,13 +36,29 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 400,
-  bgcolor: '#080808',
+  bgcolor: '#1b1b1b',
   boxShadow: 24,
   p: 4,
+  textAlign: "center",
+  borderRadius: 2
 };
 
 
 const Artist = () => {
+  //popover
+  const [anchorPopover, setAnchorPopover] = useState(null);
+
+  const handleClickPopoverBtn = (event) => {
+    setAnchorPopover(event.currentTarget);
+  };
+
+  const handleClosePopover = () => {
+    setAnchorPopover(null);
+  };
+
+  const openPopover = Boolean(anchorPopover);
+  const id = openPopover ? 'simple-popover' : undefined;
+
   //dropdown
   const [anchorEl, setAnchorEl] = useState(null);
   const Open = Boolean(anchorEl);
@@ -70,6 +87,7 @@ const Artist = () => {
     setShowMerchandise(false);
   }
 
+  //drawer1
   const [state, setState] = useState({
     top: false,
     left: false,
@@ -108,6 +126,47 @@ const Artist = () => {
     </Box>
   );
 
+  //drawer 2
+  const [state2, setState2] = useState({
+    top: false,
+    left: false,
+    bottom: false,
+    right: false,
+  });
+
+  const toggleDrawer2 = (anchor, open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+
+    setState2({ ...state2, [anchor]: open });
+  };
+
+  const list2 = (anchor) => (
+    <Box
+      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250, bgcolor: "#1b1b1b", height: "100vh" }}
+      role="presentation"
+      onClick={toggleDrawer2(anchor, false)}
+      onKeyDown={toggleDrawer2(anchor, false)}
+    >
+      <h5 className="font-weight-bolder text-white p-3">My uploads</h5>
+      <button className="btn btn-success btn-lg" style={{"marginLeft": 10}}><i className="fa fa-plus"></i> Create media</button>
+      <p style={{"fontSize": 13}} className="p-3 mt-3 font-weight-bolder text-white">Mp3 files</p>
+      <List>
+          <ListItem disablePadding>
+            <ListItemButton>
+            <ListItemText primary="AUD-20232429-WA899732" sx={{color: "#ffffff"}}/> <span className="text-white">&times;</span>
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton>
+            <ListItemText primary="AUD-78882776-WA878254" sx={{color: "#ffffff"}}/> <span className="text-white">&times;</span>
+            </ListItemButton>
+          </ListItem>
+      </List>
+    </Box>
+  );
+
   return (
     <div style={{"backgroundColor": "#080808"}}>
         <div className="carousel slide" data-bs-ride="carousel">
@@ -128,7 +187,32 @@ const Artist = () => {
                       {list('right')}
                     </Drawer>
 
-                    <button onClick={handleOpen} className="btn btn-success m-3">Upload</button>
+                    <button onClick={handleClickPopoverBtn} className="btn btn-success m-3">Upload</button>
+                    <Popover 
+                    id={id}
+                    open={openPopover}
+                    anchorEl={anchorPopover}
+                    onClose={handleClosePopover}
+                    anchorOrigin={{
+                        vertical: 'top',
+                        horizontal: 'center',
+                    }}
+                    transformOrigin={{
+                        vertical: 'top',
+                        horizontal: 'center',
+                    }}
+                    >
+                    <button className="p-2" onClick={handleOpen} style={{"border": "none"}}>Upload New</button>
+                    <br />
+                    <button className="p-2" style={{"border": "none"}} onClick={toggleDrawer2('left', true)}>My Uploads</button>
+                    <Drawer
+                      anchor='left'
+                      open={state2['left']}
+                      onClose={toggleDrawer2('left', false)}
+                    >
+                      {list2('left')}
+                    </Drawer>
+                    </Popover>
 
                     <Modal
                     open={open}
@@ -137,25 +221,16 @@ const Artist = () => {
                     aria-describedby="modal-modal-description"
                 >
                     <Box sx={style}>
-                    <Typography id="modal-modal-title" variant="h6" component="h2" className="text-white font-weight-bold">
-                        Choose what to upload:
+                    <Typography id="modal-modal-title" variant="h6" component="h2" className="text-white font-weight-bold" sx={{textAlign: "center", p:2}}>
+                        My device
                     </Typography>
-                   
-                   <div style={{"marginTop": "16px", "border": "1px solid #f1f1f1", "display": "flex", "justifyContent": "center", "alignItems": "center", "padding": "20px"}}>
-                        <p className="text-white font-weight-bold">Upload Song</p>
-                   </div>
-                   <div style={{"marginTop": "16px", "border": "1px solid #f1f1f1", "display": "flex", "justifyContent": "center", "alignItems": "center", "padding": "20px"}}>
-                        <p className="text-white font-weight-bold">Upload Beats/Instrumentals</p>
-                   </div>
-                   <div style={{"marginTop": "16px", "border": "1px solid #f1f1f1", "display": "flex", "justifyContent": "center", "alignItems": "center", "padding": "20px"}}>
-                        <p className="text-white font-weight-bold">Upload Podcast</p>
-                   </div>
-                   <div style={{"marginTop": "16px", "border": "1px solid #f1f1f1", "display": "flex", "justifyContent": "center", "alignItems": "center", "padding": "20px"}}>
-                        <p className="text-white font-weight-bold">Upload Merchandise</p>
-                   </div>
-                   <div style={{"marginTop": "16px", "border": "1px solid #f1f1f1", "display": "flex", "justifyContent": "center", "alignItems": "center", "padding": "20px"}}>
-                        <p className="text-white font-weight-bold">Upload Sound kits</p>
-                   </div>
+                    <i class="fa-solid fa-cloud-arrow-up" style={{"fontSize": "100px", "color": "gray"}}></i>
+                    <p className="p-2">Upload files from your computer (Or drag them here)</p>
+                    <button className="btn btn-success btn-lg">Choose files</button>
+                    <div className="p-2 mt-2 text-white">
+                        <i className="fa fa-youtube"></i>&nbsp;
+                        <span>How to upload</span>
+                    </div>
                     </Box>
                 </Modal>
                     
@@ -518,9 +593,46 @@ const Artist = () => {
                 </div>
 
             </div>
+
+            <div style={{"display": "flex", "alignItems": "flex-start", "justifyContent": "space-around", "marginTop": "20px"}}>
+            <div style={{"backgroundColor": "#1b1b1b", "padding": "20px", "borderRadius": "10px"}}>
+                <h4 className="text-white">Learn</h4>
+                <p className="text-white">How To Customize Your BeatStars Pro Page</p>
+                <p className="text-white">Posted on 24 Jan. by BeatStars</p>
+                <iframe width="400" height="315"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+            </div>
+        <div style={{"backgroundColor": "#1b1b1b", "padding": "20px", "borderRadius": "10px", "width": "50%"}}>
+            <h4 className="text-white">Opportunities</h4>
+            <div style={{"display": "flex", "alignItems": "flex-start"}}>
+                <img src="https://s3.amazonaws.com/beatstarsdata/b.user.data/_system/gfx/1660628977-opportunity.jpg" width="50px" height="50px" style={{"margin": "10px"}}/>
+                <div style={{"margin": "10px"}}>
+                    <p className="text-white"> Blackbear Type Beats playlist </p>
+                    <p> Submit your best Blackbear beats for a chance to be featured on our official Blackbear Type Beats playlist. This playlist will feature the hottest... </p>
+                </div>
+            </div>
+            <div style={{"display": "flex", "alignItems": "flex-start"}}>
+                <img src="https://s3.amazonaws.com/beatstarsdata/b.user.data/_system/gfx/1660628977-opportunity.jpg" width="50px" height="50px" style={{"margin": "10px"}}/>
+                <div style={{"margin": "10px"}}>
+                    <p className="text-white"> Blackbear Type Beats playlist </p>
+                    <p> Submit your best Blackbear beats for a chance to be featured on our official Blackbear Type Beats playlist. This playlist will feature the hottest... </p>
+                </div>
+            </div>
+            <div style={{"display": "flex", "alignItems": "flex-start"}}>
+                <img src="https://s3.amazonaws.com/beatstarsdata/b.user.data/_system/gfx/1660628977-opportunity.jpg" width="50px" height="50px" style={{"margin": "10px"}}/>
+                <div style={{"margin": "10px"}}>
+                    <p className="text-white"> Blackbear Type Beats playlist </p>
+                    <p> Submit your best Blackbear beats for a chance to be featured on our official Blackbear Type Beats playlist. This playlist will feature the hottest... </p>
+                </div>
+            </div>
+            <button className="w-100 btn btn-success btn-lg">Show All Opportunities</button>
+        </div>
+        </div>
         </div>
 
     </div>
+
     </div>
   )
 }
